@@ -1,0 +1,57 @@
+.wrapper {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+}
+
+.corner {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid #EEE;
+  cursor: move;
+  z-index: 10;
+}
+
+.dragging {
+  box-shadow: 0 0 1em #EEE;
+}
+
+.left {
+  left: -1em;
+}
+
+.top {
+  top: -1em;
+}
+
+.right {
+  right: -1em;
+}
+
+.bottom {
+  bottom: -1em;
+}
+
+.field {
+  width: 50px;
+  height: 50px;
+  left: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "wordxer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server extension/",
+    "build": "watchify src/index.js -o extension/index.js -t [ babelify --presets [ \"env\" \"react\"] ] -p [ css-modulesify -o extension/main.css ]"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.0",
+    "classnames": "^2.2.5",
+    "css-modulesify": "^0.28.0",
+    "live-server": "^1.2.0",
+    "watchify": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "description": ""
+}

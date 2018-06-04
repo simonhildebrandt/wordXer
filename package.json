@@ -1,11 +1,12 @@
 {
   "name": "wordxer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server extension/",
+    "serve": "live-server",
     "build": "watchify src/index.js -o extension/index.js -t [ babelify --presets [ \"env\" \"react\"] ] -p [ css-modulesify -o extension/main.css ]",
-    "sass": "node-sass --watch src/styles.scss src/styles.css"
+    "sass": "node-sass --watch src/styles.scss src/styles.css",
+    "package": "zip extension.zip extension/*"
   },
   "author": "",
   "license": "ISC",

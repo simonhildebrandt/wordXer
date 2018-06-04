@@ -1,6 +1,6 @@
   {
   "name": "WordXer",
-  "version": "1.0",
+  "version": "0.0.1",
   "description": "Tools for online crosswords",
   "manifest_version": 2,
   "permissions": [
@@ -11,7 +11,7 @@
   },
     "content_scripts": [
   {
-  "matches": ["http://*/*", "https://*/*"],
+  "matches": ["http://*/*", "https://*/*", "file:///*"],
     "css": ["main.css"],
     "js": ["index.js"]
   }

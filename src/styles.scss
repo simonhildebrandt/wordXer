@@ -6,81 +6,81 @@
   top: 50px;
   border: 1px solid #EEE;
   border-radius: 5px;
-}
+  z-index: 100;
 
-.corner {
-  position: absolute;
-  width: 1.5em;
-  height: 1.5em;
-  background-color: white;
-  text-align: center;
-  vertical-align: center;
-  border: 1px solid #EEE;
-  cursor: move;
-  z-index: 10;
-}
-
-.dragging {
-  box-shadow: 0 0 1em #EEE;
-}
-
-.left {
-  left: -1em;
-}
-
-.top {
-  top: -1em;
-}
-
-.right {
-  right: -1em;
-}
-
-.bottom_right {
-  right: 1em;
-  bottom: -1.5em;
-  width: 2em;
-  height: 1.2em;
-}
-
-.right_bottom {
-  right: -1.5em;
-  bottom: 1em;
-  width: 1em;
-  height: 2em;
-}
-
-.scaling {
-  position: absolute;
-  border: 1px solid #EEE;
-  border-radius: 5px;
-  background-color: white;
-  cursor: pointer;
-
-  div {
-    float: left;
-    width: 1em;
-    height: 1em;
+  .corner {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: white;
     text-align: center;
+    vertical-align: center;
+    border: 1px solid #EEE;
+    cursor: move;
+    z-index: 10;
   }
-}
 
-.bottom {
-  bottom: -1em;
-}
+  &.changing {
+    box-shadow: 0 0 1em #EEE;
 
-.field {
-  width: 50px;
-  height: 50px;
-  left: 5px;
-  top: 5px;
-  position: absolute;
-}
+    input[type=text] {
+      border: 1px solid gray;
+    }
+  }
 
-.field input {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: rgba(0,0,0,0);
+  .left {
+    left: -1em;
+  }
+
+  .top {
+    top: -1em;
+  }
+
+  .right {
+    right: -1em;
+  }
+
+  .bottom_right {
+    right: 1em;
+    bottom: -1.5em;
+    width: 2em;
+    height: 1.2em;
+  }
+
+  .right_bottom {
+    right: -1.5em;
+    bottom: 1em;
+    width: 1em;
+    height: 2em;
+  }
+
+  .scaling {
+    position: absolute;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+
+    div {
+      float: left;
+      width: 1em;
+      height: 1em;
+      text-align: center;
+    }
+  }
+
+  .bottom {
+    bottom: -1em;
+  }
+
+  input[type=text] {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #00000000;
+    border: none;
+    overflow: visible;
+  }
 }

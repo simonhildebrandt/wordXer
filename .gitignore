@@ -1,5 +1,6 @@
-.DS_Store
 node_modules
+.DS_Store
 extension/index.js
 extension/main.css
-extension/cryptic1.png
+extension.zip
+src/styles.css

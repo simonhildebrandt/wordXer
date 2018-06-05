@@ -12,19 +12,20 @@
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
-    "browserify": "^16.2.0",
+    "browserify": "^16.2.2",
     "classnames": "^2.2.5",
     "css-modulesify": "^0.28.0",
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "watchify": "^3.11.0"
   },
-  "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+  "resolutions": {
+    "node-sass/**/request": "^2.82.0"
   },
   "description": ""
 }
